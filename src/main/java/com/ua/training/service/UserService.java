@@ -36,9 +36,13 @@ public class UserService {
 
 
 
-
-
     public User getUsers(String name) {
         return users.get(name);
+    }
+    public User addUser(String name, User user) {
+        return users.put(name, user);
+    }
+    public User deleteUser(String key) {
+        return users.remove(key);
     }
 }

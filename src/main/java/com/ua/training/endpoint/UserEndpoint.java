@@ -1,6 +1,8 @@
 package com.ua.training.endpoint;
 
 import com.ua.training.GetUserResponse;
+import com.ua.training.PutUserRequest;
+import com.ua.training.User;
 import com.ua.training.service.UserService;
 
 import javax.jws.WebMethod;
@@ -16,5 +18,17 @@ public class UserEndpoint {
         GetUserResponse response = new GetUserResponse();
         response.setUser(userService.getUsers(name));
         return response;
+    }
+
+    @WebMethod
+    public void putUserRequest(User user) {
+       userService.addUser(user.getName(), user);
+
+    }
+    @WebMethod
+    public void deleteUser(String key) {
+        GetUserResponse response = new GetUserResponse();
+         userService.deleteUser(key);
+
     }
 }
