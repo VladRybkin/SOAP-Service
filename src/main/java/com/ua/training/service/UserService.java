@@ -1,6 +1,6 @@
-package com.epam.soapWS.server.service;
+package com.ua.training.service;
 
-import com.epam.soapWS.server.User;
+import com.ua.training.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

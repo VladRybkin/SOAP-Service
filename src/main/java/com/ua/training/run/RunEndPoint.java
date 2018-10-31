@@ -1,8 +1,7 @@
-package com.epam.soapWS.server.run;
+package com.ua.training.run;
 
 
-import com.epam.soapWS.server.endpoint.UserEndpoint;
-import com.epam.soapWS.server.service.UserService;
+import com.ua.training.endpoint.UserEndpoint;
 
 import javax.xml.ws.Endpoint;
 

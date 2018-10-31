@@ -1,12 +1,10 @@
-package com.epam.soapWS.server.endpoint;
+package com.ua.training.endpoint;
 
-import com.epam.soapWS.server.GetUserRequest;
-import com.epam.soapWS.server.GetUserResponse;
-import com.epam.soapWS.server.service.UserService;
+import com.ua.training.GetUserRequest;
+import com.ua.training.GetUserResponse;
+import com.ua.training.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
-import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

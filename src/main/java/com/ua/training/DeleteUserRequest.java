@@ -6,7 +6,7 @@
 //
 
 
-package com.epam.soapWS.server;
+package com.ua.training;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -38,8 +38,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "name"
 })
-@XmlRootElement(name = "getUserRequest")
-public class GetUserRequest {
+@XmlRootElement(name = "deleteUserRequest")
+public class DeleteUserRequest {
 
     @XmlElement(required = true)
     protected String name;

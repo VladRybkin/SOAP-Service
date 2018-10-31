@@ -6,7 +6,7 @@
 //
 
 
-package com.epam.soapWS.server;
+package com.ua.training;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="constellation" type="{http://techprimers.com/spring-boot-soap-example}user"/&gt;
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "constellation"
+    "name"
 })
-@XmlRootElement(name = "postUserRequest")
-public class PostUserRequest {
+@XmlRootElement(name = "getUserRequest")
+public class GetUserRequest {
 
     @XmlElement(required = true)
-    protected User constellation;
+    protected String name;
 
     /**
-     * Gets the value of the constellation property.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
-     *     {@link User }
+     *     {@link String }
      *     
      */
-    public User getConstellation() {
-        return constellation;
+    public String getName() {
+        return name;
     }
 
     /**
-     * Sets the value of the constellation property.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
-     *     {@link User }
+     *     {@link String }
      *     
      */
-    public void setConstellation(User value) {
-        this.constellation = value;
+    public void setName(String value) {
+        this.name = value;
     }
 
 }
