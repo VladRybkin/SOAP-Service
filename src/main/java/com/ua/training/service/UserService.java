@@ -1,20 +1,20 @@
 package com.ua.training.service;
 
 import com.ua.training.User;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
+
 public class UserService {
 
-    private static final Map<String, User> users = new HashMap<>();
+    private Map<String, User> users = new HashMap<>();
 
-    @PostConstruct
-    public void initialize() {
+    public UserService() {
+       init();
+    }
 
+    private void init(){
         User peter = new User();
         peter.setName("Peter");
         peter.setId(1);
@@ -33,6 +33,9 @@ public class UserService {
         users.put(sam.getName(), sam);
         users.put(ryan.getName(), ryan);
     }
+
+
+
 
 
     public User getUsers(String name) {
