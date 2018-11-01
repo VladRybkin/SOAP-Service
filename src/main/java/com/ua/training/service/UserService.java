@@ -34,7 +34,9 @@ public class UserService {
         users.put(ryan.getName(), ryan);
     }
 
-
+    public Map<String, User> getUsers() {
+        return users;
+    }
 
     public User getUsers(String name) {
         return users.get(name);

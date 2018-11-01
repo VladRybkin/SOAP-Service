@@ -68,4 +68,10 @@ public class GetUserResponse {
         this.user = value;
     }
 
+    @Override
+    public String toString() {
+        return "GetUserResponse{" +
+                "user=" + user +
+                '}';
+    }
 }

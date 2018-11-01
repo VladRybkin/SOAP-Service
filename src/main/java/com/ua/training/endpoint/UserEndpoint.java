@@ -1,7 +1,7 @@
 package com.ua.training.endpoint;
 
+
 import com.ua.training.GetUserResponse;
-import com.ua.training.PutUserRequest;
 import com.ua.training.User;
 import com.ua.training.service.UserService;
 

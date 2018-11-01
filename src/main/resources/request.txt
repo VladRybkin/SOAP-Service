@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:ns1="http://tutorialspoint/schemas">
+    <soap:Body>
+        <ns1:getUserRequest>
+            <arg0>Peter</arg0>
+        </ns1:getUserRequest>
+    </soap:Body>
+</soap:Envelope>
