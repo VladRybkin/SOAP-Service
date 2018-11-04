@@ -6,7 +6,9 @@
 //
 
 
-package com.ua.training;
+package com.ua.training.model.request;
+
+import com.ua.training.model.entity.User;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="user" type="{http://tutorialspoint/schemas}user"/&gt;
+ *         &lt;element name="name" type="{http://tutorialspoint/schemas}user"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,42 +38,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "user"
+    "name"
 })
-@XmlRootElement(name = "getUserResponse")
-public class GetUserResponse {
+@XmlRootElement(name = "putUserRequest")
+public class PutUserRequest {
 
     @XmlElement(required = true)
-    protected User user;
+    protected User name;
 
     /**
-     * Gets the value of the user property.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
      *     {@link User }
      *     
      */
-    public User getUser() {
-        return user;
+    public User getName() {
+        return name;
     }
 
     /**
-     * Sets the value of the user property.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
      *     {@link User }
      *     
      */
-    public void setUser(User value) {
-        this.user = value;
+    public void setName(User value) {
+        this.name = value;
     }
 
-    @Override
-    public String toString() {
-        return "GetUserResponse{" +
-                "user=" + user +
-                '}';
-    }
 }

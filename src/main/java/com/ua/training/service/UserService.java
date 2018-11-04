@@ -1,6 +1,6 @@
 package com.ua.training.service;
 
-import com.ua.training.User;
+import com.ua.training.model.entity.User;
 
 import java.util.HashMap;
 import java.util.Map;

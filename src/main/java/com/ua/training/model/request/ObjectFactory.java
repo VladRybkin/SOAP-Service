@@ -6,7 +6,9 @@
 //
 
 
-package com.ua.training;
+package com.ua.training.model.request;
+
+import com.ua.training.model.entity.User;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

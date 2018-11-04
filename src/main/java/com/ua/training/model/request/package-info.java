@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://tutorialspoint/schemas", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package com.ua.training;
+package com.ua.training.model.request;

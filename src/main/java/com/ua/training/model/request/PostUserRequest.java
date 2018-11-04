@@ -6,7 +6,9 @@
 //
 
 
-package com.ua.training;
+package com.ua.training.model.request;
+
+import com.ua.training.model.entity.User;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="constellation" type="{http://tutorialspoint/schemas}user"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +38,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name"
+    "constellation"
 })
-@XmlRootElement(name = "getUserRequest")
-public class GetUserRequest {
+@XmlRootElement(name = "postUserRequest")
+public class PostUserRequest {
 
     @XmlElement(required = true)
-    protected String name;
+    protected User constellation;
 
     /**
-     * Gets the value of the name property.
+     * Gets the value of the constellation property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public String getName() {
-        return name;
+    public User getConstellation() {
+        return constellation;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the value of the constellation property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setConstellation(User value) {
+        this.constellation = value;
     }
 
 }
