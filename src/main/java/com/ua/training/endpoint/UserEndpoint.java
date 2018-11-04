@@ -1,8 +1,8 @@
 package com.ua.training.endpoint;
 
 
-import com.ua.training.model.request.GetUserResponse;
-import com.ua.training.model.entity.User;
+import com.ua.training.model.GetUserResponse;
+import com.ua.training.model.User;
 import com.ua.training.service.UserService;
 
 import javax.jws.WebMethod;

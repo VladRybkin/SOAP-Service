@@ -1,6 +1,7 @@
 package com.ua.training.service;
 
-import com.ua.training.model.entity.User;
+import com.ua.training.model.Skill;
+import com.ua.training.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,18 +17,26 @@ public class UserService {
 
     private void init(){
         User peter = new User();
+        Skill java=new Skill();
+        java.setId(1);
+        java.setName("java");
         peter.setName("Peter");
         peter.setId(1);
         peter.setSalary(12000);
+        peter.setSkill(java);
+
 
         User sam = new User();
         sam.setName("Sam");
         sam.setId(2);
         sam.setSalary(32000);
+        sam.setSkill(java);
+
         User ryan = new User();
         ryan.setName("Ryan");
         ryan.setId(3);
         ryan.setSalary(16000);
+        ryan.setSkill(java);
 
         users.put(peter.getName(), peter);
         users.put(sam.getName(), sam);
